@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function fibonaci(){
+        var f0 = parseInt(prompt("nhap s1:"))
+        var f1 = parseInt(prompt("nhap s2:"))
+        var arr= new Array();
+        var fibo="";
+         var sum=0;
+        for(var i=2; i<20;i++){
+            arr[0]= f0;
+            arr[1]= f1;
+            arr[i]= arr[i-1]+ arr[i-2];
+            fibo= fibo.concat(" "+ arr[i]);
+        }
+        alert("day so:1 2"+fibo);
+        arr.forEach(function (x){
+
+            console.log(x);
+            if(x==5){
+                alert("day roi ");
+            }
+        })
+arr.forEach(function (x){
+
+    sum+=x;
+
+})
+        console.log(1+2+sum)
+
+    }
+    fibonaci();
+
+</script>
+</body>
+</html>
